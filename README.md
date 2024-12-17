@@ -51,8 +51,8 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/wanjiku8/Final-Project.git
 
-
-Open the Project in a Browser
+```
+### Open the Project in a Browser
 Simply open the index.html file in your browser.
 
 Explore the Soundboard
@@ -64,14 +64,14 @@ Search for your favorite animals.
 Add New Animals
 Update the app.js file to include new animals in the hardcoded animals array:
 
-javascript
-Copy code
+```bash
 {
   "name": "Parrot",
   "image": "images/parrot.jpg",
   "fact": "Parrots are highly intelligent birds.",
   "sound": "sounds/parrot.mp3"
 }
+```
 Change Styles
 Edit the style.css file to customize the layout, colors, or fonts.
 
