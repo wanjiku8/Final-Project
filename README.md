@@ -78,6 +78,9 @@ Edit the style.css file to customize the layout, colors, or fonts.
 Improve Features
 Enhance app.js to add new interactive features, such as animations or sound effects.
 
+
+
+```bash
 👨‍💻 Author
 Name: Faith
 Project: Final Submission
