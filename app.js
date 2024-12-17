@@ -2,17 +2,102 @@ document.addEventListener("DOMContentLoaded", () => {
     const animalGrid = document.getElementById("animal-grid");
     const searchInput = document.getElementById("search-input");
 
-    // Store all animals data
-    let animals = [];
+    // Hardcoded animals data
+    const animals = [
+        {
+            "name": "Cow",
+            "image": "images/cow.jpg",
+            "fact": "Cows have four stomach chambers.",
+            "sound": "sounds/cow-mooing-loudly-223546.mp3"
+        },
+        {
+            "name": "Dog",
+            "image": "images/dog.jpg",
+            "fact": "Dogs are loyal companions.",
+            "sound": "sounds/small-dog-barking-84707.mp3"
+        },
+        {
+            "name": "Duck",
+            "image": "images/duck.jpg",
+            "fact": "Ducks have waterproof feathers.",
+            "sound": "sounds/duck-quacking-37392.mp3"
+        },
+        {
+            "name": "Elephant",
+            "image": "images/elephant.jpg",
+            "fact": "Elephants are the largest land animals.",
+            "sound": "sounds/elephant-225994.mp3"
+        },
+        {
+            "name": "Frog",
+            "image": "images/frog.jpg",
+            "fact": "Frogs absorb water through their skin.",
+            "sound": "sounds/frog-croaks-22312.mp3"
+        },
+        {
+            "name": "Horse",
+            "image": "images/horse.jpg",
+            "fact": "Horses can sleep standing up.",
+            "sound": "sounds/horse-neigh-261131.mp3"
+        },
+        {
+            "name": "Lion",
+            "image": "images/lion.jpg",
+            "fact": "Lions are known as the king of the jungle.",
+            "sound": "sounds/lion-roars-with-growls-and-inhales-195839.mp3"
+        },
+        {
+            "name": "Snake",
+            "image": "images/snake.jpg",
+            "fact": "Snakes smell with their tongues.",
+            "sound": "sounds/snake-hissing-6092.mp3"
+        },
+        {
+            "name": "Cat",
+            "image": "images/cat.jpg",
+            "fact": "Cats have five toes on their front paws and four on their back paws.",
+            "sound": "sounds/kittens-meowing-90204.mp3"
+        },
+        {
+            "name": "Monkey",
+            "image": "images/monkey.jpg",
+            "fact": "Monkeys are highly intelligent and use tools.",
+            "sound": "sounds/monkey-128368.mp3"
+        },
+        {
+            "name": "Tiger",
+            "image": "images/tiger.jpg",
+            "fact": "Tigers are the largest wild cats in the world.",
+            "sound": "sounds/tiger-attack-195840.mp3"
+        },
+        {
+            "name": "Wolf",
+            "image": "images/wolf.jpg",
+            "fact": "Wolves travel in packs and are highly social animals.",
+            "sound": "sounds/wolf-howl-268619.mp3"
+        },
+        {
+            "name": "Bear",
+            "image": "images/bear.jpg",
+            "fact": "Bears can run up to 30 miles per hour.",
+            "sound": "sounds/sound-of-growling-bear-hd-263159.mp3"
+        },
+        {
+            "name": "Penguin",
+            "image": "images/penguin.jpg",
+            "fact": "Penguins are flightless birds that swim exceptionally well.",
+            "sound": "sounds/pinguin-220042.mp3"
+        },
+        {
+            "name": "Parrot",
+            "image": "images/parrot.jpg",
+            "fact": "Parrots can mimic human speech.",
+            "sound": "sounds/parrots-88486.mp3"
+        }
+    ];
 
-    // Fetch the data from db.json
-    fetch("http://localhost:3000/animals") // Adjust the path if running JSON server
-        .then(response => response.json())
-        .then(data => {
-            animals = data; // Save the fetched animals data
-            generateAnimalCards(animals); // Generate animal cards initially
-        })
-        .catch(error => console.error("Error loading animal data:", error));
+    // Generate animal cards initially
+    generateAnimalCards(animals);
 
     // Function to generate animal cards
     function generateAnimalCards(filteredAnimals) {
@@ -82,5 +167,3 @@ document.addEventListener("DOMContentLoaded", () => {
         generateAnimalCards(filteredAnimals);
     });
 });
-
-
