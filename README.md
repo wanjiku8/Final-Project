@@ -78,7 +78,7 @@ Improve Features:
 Enhance app.js to add new interactive features, such as animations or sound effects.
 
 👨‍💻 Author
-Name: Faith
+Name: Faith 
 Project: Final Submission
 Purpose: Interactive web application for kids.
 
