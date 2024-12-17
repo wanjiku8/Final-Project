@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const animalGrid = document.getElementById("animal-grid");
     const searchInput = document.getElementById("search-input");
 
-    // Hardcoded animals data
+    // animals data
     const animals = [
         {
             "name": "Cow",
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
-    // Generate animal cards initially
+   
     generateAnimalCards(animals);
 
     // Function to generate animal cards
@@ -133,15 +133,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Add event listener to play sound when clicked
             soundButton.addEventListener("click", () => {
-                const audio = new Audio(animal.sound); // Assuming each animal object has a sound property
+                const audio = new Audio(animal.sound);
                 audio.play();
 
-                // Set a timeout to stop the sound after 5 seconds (5000 milliseconds)
-                const timeoutDuration = 5000; // Adjust this duration based on your needs
+        
+                const timeoutDuration = 5000; 
 
                 setTimeout(() => {
                     audio.pause();
-                    audio.currentTime = 0; // Reset to the beginning
+                    audio.currentTime = 0; 
                 }, timeoutDuration);
             });
 
