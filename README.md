@@ -1,5 +1,7 @@
 # 🐾 Animal Soundboard 🐾
 
+![image](https://github.com/user-attachments/assets/0857a82c-4aa9-439c-9847-3cafa94cc053)
+
 🎉 **Project Overview**  
 The Animal Soundboard is an interactive and engaging web application designed to entertain kids and animal enthusiasts alike. It dynamically displays a grid of animal cards, each featuring:
 
