@@ -167,3 +167,21 @@ document.addEventListener("DOMContentLoaded", () => {
         generateAnimalCards(filteredAnimals);
     });
 });
+
+
+
+
+document.getElementById('theme-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+    const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', currentTheme); // Save the theme preference
+  });
+  
+  // Apply the saved theme on load
+  window.addEventListener('load', function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+  });
+  
